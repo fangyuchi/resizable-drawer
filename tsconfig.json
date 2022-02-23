@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noEmitOnError": false,
+    // "noUnusedLocals": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "suppressImplicitAnyIndexErrors": true,
+    // ! 这个别加，gulp打包出来老是多一级
+    // "paths": {
+    //   "@/*": [
+    //     "./src/*"
+    //   ]
+    // },
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "built",
+    "dist",
+    "es",
+    "lib",
+    "scripts",
+    "webpack",
+    "jest",
+    "src/demo"
+  ]
+}

@@ -1,0 +1,80 @@
+@import '../styles/default.scss';
+
+// .#{$pkg-prefix}-drawer {
+
+// }
+
+.#{$pkg-prefix}-drawer.#{$pkg-prefix}-drawer-resizable {
+
+  .#{$pkg-prefix}-drawer-resize-holder-right,
+  .#{$pkg-prefix}-drawer-resize-holder-left,
+  .#{$pkg-prefix}-drawer-resize-holder-bottom,
+  .#{$pkg-prefix}-drawer-resize-holder-top {
+    position: absolute;
+    z-index: 1;
+
+    background-color: #f7f7f7;
+
+    &:hover {
+      background-color: #f0f3f7;
+    }
+
+    transition: background-color 0.3s;
+
+    font-size: 42px;
+    color: #CED4DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .#{$pkg-prefix}-drawer-resize-holder-right {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    cursor: col-resize;
+
+    span {
+      transform: scale(0.5, 1.25);
+    }
+  }
+
+  .#{$pkg-prefix}-drawer-resize-holder-left {
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    cursor: col-resize;
+
+    span {
+      transform: scale(0.5, 1.25);
+    }
+  }
+
+  .#{$pkg-prefix}-drawer-resize-holder-top {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    cursor: row-resize;
+
+    span {
+      margin-bottom: 2px;
+      transform: scale(0.75, 0.5);
+    }
+  }
+
+  .#{$pkg-prefix}-drawer-resize-holder-bottom {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    cursor: row-resize;
+
+    span {
+      margin-bottom: 4px;
+      transform: scale(0.75, 0.5);
+    }
+  }
+}
